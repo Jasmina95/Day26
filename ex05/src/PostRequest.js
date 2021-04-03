@@ -13,7 +13,7 @@ class PostRequest extends React.Component {
       .post("https://reqres.in/api/articles", article)
       .then((response) => this.setState({ articleId: response.data.id }));
   }
-  
+
   render() {
     const { articleId } = this.state;
     return (
