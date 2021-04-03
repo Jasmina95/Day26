@@ -12,7 +12,7 @@ class DeleteRequest extends React.Component {
       .delete("https://jsonplaceholder.typicode.com/posts/1")
       .then(() => this.setState({ status: "Delete successful" }));
   }
-  
+
   render() {
     const { status } = this.state;
     return (
